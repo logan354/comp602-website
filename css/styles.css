@@ -1,0 +1,52 @@
+* {
+
+}
+
+/* Index Page */
+
+.navbar {
+    background-color: #6f7681;
+}
+
+.navbar-cart {
+    width: 110px;
+    height: 40px;
+    background-color: #00d1cd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-cart-price {
+    position: relative;
+    left: 10px;
+    top: 6px;
+}
+
+.navbar-cart-items {
+    position: relative;
+    left: 10px;
+    top: 6px;
+}
+
+.navbar-nav li {
+    font-size: 20px;
+}
+
+.navbar-nav li a h4 {
+    color: #ffffff;
+}
+
+.navbar-search-bar .btn {
+    background-color: #ced4db;
+    border-color: #00d1cd;
+    border-width: 3px;
+}
+
+.navbar-secondary-block {
+    width: 100vw;
+    height: 50px;
+    background-color: #444444;
+    position: relative;
+    top: 0px;
+}
