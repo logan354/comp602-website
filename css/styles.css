@@ -171,6 +171,10 @@ body {
 
 /* HOME PAGE */
 /* Banner */
+.home-banner {
+    width: 100%;
+    height: auto;
+}
 
 .home-banner-box {
     width: 500px;
