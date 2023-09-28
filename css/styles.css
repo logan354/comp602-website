@@ -1,8 +1,13 @@
-* {
 
+*
+
+/* NAVBAR */
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-/* Index Page */
 
 .navbar {
     background-color: #6f7681;
@@ -51,53 +56,218 @@
     top: 0px;
 }
 
-.custom-image {
-    width: 40px; /* Set a custom width */
-    height: auto; /* Maintain aspect ratio */
+
+
+/* CATEGORIES */
+
+.categories-block {
+    width: 100vw;
+    height: 50px;
+    background-color: #969ea8;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+.categories-block h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
-/* Adjust iframe */
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #cdd4da;
+    text-align: center;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.category-box {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.category-box:hover {
+    transform: scale(1.15);
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.category-text p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+/* POPULAR PRODUCTS */
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: #cdd4da;
+    position: relative;
+    text-align: center;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.product-box {
+    background-color: #7f8389;
+    border: #7f8389;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-box p {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.product-box:hover {
+    transform: scale(1.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-box button.btn-primary {
+    background-color: #a8afb7;
+    border-color: #a8afb7;
+}
+
+/* FOOTER */
+
+.custom-image {
+    width: 40px;
+    height: auto;
+    position: relative;
+}
+
+.rounded-iframe-container {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+    height: 0;
+}
+
 .rounded-iframe {
     border-radius: 15px;
-    height: 170px;
-}
-
-/* Aspect ratio for social media icons */
-.social-icons img {
-    width: 45px;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Adjusted margin for social icons */
 .social-icons {
-    margin-top: -20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 /* Adjusted margin for logo-no-background.png */
 .logo-no-background {
-    margin-top: -50px;
-    margin-bottom: -30px;
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto;
+    margin-top: -40px;
+    margin-bottom: -50px;
+    margin-left: 30px;
 }
 
-/* Adjust font sizes */
-p {
+footer, p {
     font-size: 1.25rem;
     line-height: 1.75;
-    color:#fff
+    color: #fff;
 }
-h4 {
+
+footer, h4 {
     font-size: 2rem;
     line-height: 1.2;
-    color:#fff
+    color: #fff;
 }
 
-/* Add margin between social icons */
-.social-icons a {
-    margin-right: 15px;
-}
-
-a {
+footer a {
     text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+/* Increase space above footer on smaller screens */
+@media (max-width: 767px) {
+    footer {
+        margin-top: 20px;
+    }
+}
+
+/* Adjust margin for social icons on smaller screens */
+@media (max-width: 575px) {
+    .social-icons {
+        margin-top: 5px;
+    }
+}
+
+/* Adjusted margin for logo-no-background.png on smaller screens */
+@media (max-width: 575px) {
+    .logo-no-background {
+        margin-top: -20px;
+        margin-bottom: -30px;
+        margin-left: 15px;
+    }
+}
+
+/* Adjust font sizes on smaller screens */
+@media (max-width: 575px) {
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
+
+/* Adjusted font sizes for smaller screens */
+@media (max-width: 480px) {
+    p {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
 }
