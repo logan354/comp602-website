@@ -341,3 +341,14 @@ body {
 /* ABOUT PAGE */
 
 /* CONTACT PAGE */
+.contact-banner {
+    width: 100%;
+    height: auto;
+}
+
+.contact-banner-text {
+    position: absolute;
+    left: 325px;
+    top: 450px;
+    color: #ffffff;   
+}
