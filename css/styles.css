@@ -365,13 +365,13 @@ body {
     border-color:#a6afb7;
     border-width: 2px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease; /* Add a transition for smooth animation */
+    transition: left 0.3s ease;
 }
 .floating-menu.active {
-    left: 0; /* Slide in the menu when active */
+    left: 0;
 }
 .floating-menu.active .menu-content {
-    max-height: none; /* Remove the height restriction on hover */
+    max-height: none;
 }
 .menu-toggle {
     background: none;
