@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = productDisplay.querySelector('.next-button');
     
     const images = [
-      'images/product/p1.png',
-      'images/product/p1var/p1a.png',
-      'images/product/p1var/p1b.png',
-      'images/product/p1var/p1c.png'
+      'images/products/p1.png',
+      'images/products/p1var/p1a.png',
+      'images/products/p1var/p1b.png',
+      'images/products/p1var/p1c.png'
     ];
     
     let currentImageIndex = 0;
