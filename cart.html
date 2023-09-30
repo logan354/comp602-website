@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This website has been tested on: Google Chrome and Microsft Edge -->
+<!-- Cart page is -->
 
 <head>
     <meta charset="utf-8">
@@ -8,6 +8,8 @@
     <title>Tunnel Stone</title>
     <link rel="icon" href="images/tunnel-stone/logo-no-background-icon.png" type="image/icon type">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -72,94 +74,87 @@
             </div>
         </div>
     </nav>
+
     <!-- Secondary box -->
     <div class="navbar-secondary-box"></div>
 
 
-
-    <!-- Banner -->
-    <img src="images/cladding-banner.jpg" class="home-banner img-fluid" alt="Image">
-    <div class="home-banner-box">
-        <h1>The Home of<br>Home Improvement</h1>
-    </div>
-    <a href="shop.html" class="home-banner-box2">
-        <h2>SHOP ALL</h2>
-    </a>
-
-
-
-    <!-- Categories -->
-    <div class="categories-block">
-        <h5>CATEGORIES</h5>
-    </div>
-
-    <div class="category-container">
-        <div class="category-box" onclick="redirectToPage(pageUrl)">
-            <div class="category-image" style="background-image: url('images/products/tools.png')"></div>
-            <div class="category-text">
-                <p>TOOLS</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/timber.png')"></div>
-            <div class="category-text">
-                <p>TIMBER</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/electrical.png')"></div>
-            <div class="category-text">
-                <p>ELECTRICAL</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/plumbing.png')"></div>
-            <div class="category-text">
-                <p>PLUMBING</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Popular Products -->
-    <div class="categories-block">
-        <h5>POPULAR PRODUCTS</h5>
-    </div>
     <div class="product-container">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="product-box py-4">
-                        <p>Battery Driver</p>
-                        <a href="product.html">
-                            <img src="images/products/p1.png" alt="Product Name" class="product-image">
-                        </a>
-                        <p>$0.00</p>
-                        <button class="btn btn-primary">Add to Cart</button>
+            <div class="list-container">
+                <div class="cart-container">
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/products/p1.png" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h2>DRILL DRIVER</h2>
+                            <p>Price: $00.00</p>
+                            <div class="quantity">
+                                Quantity: <input type="number" value="1">
+                            </div>
+                        </div>
+                        <div class="remove-item">
+                            <i class="fa fa-trash"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="product-box py-4">
-                        <p>Battery Drill</p>
-                        <img src="images/products/p2.png" alt="Product Name" class="product-image">
-                        <p>$0.00</p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                <div class="cart-container">
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/products/p2.png" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h2>BATTERY DRILL</h2>
+                            <p>Price: $00.00</p>
+                            <div class="quantity">
+                                Quantity: <input type="number" value="1">
+                            </div>
+                        </div>
+                        <div class="remove-item">
+                            <i class="fa fa-trash"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="product-box py-4">
-                        <p>Steel Adjustable Grip</p>
-                        <img src="images/products/p3.png" alt="Product Name" class="product-image">
-                        <p>$0.00</p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                <div class="cart-container">
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/products/p3.png" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h2>ADJUSTABLE WRENCH</h2>
+                            <p>Price: $00.00</p>
+                            <div class="quantity">
+                                Quantity: <input type="number" value="1">
+                            </div>
+                        </div>
+                        <div class="remove-item">
+                            <i class="fa fa-trash"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="product-box py-4">
-                        <p>Steel Pliers</p>
-                        <img src="images/products/p4.png" alt="Product Name" class="product-image">
-                        <p>$0.00</p>
-                        <button class="btn btn-primary">Add to Cart</button>
+                <div class="cart-container">
+                    <div class="cart-item">
+                        <div class="product-image">
+                            <img src="images/products/p4.png" alt="Product Image">
+                        </div>
+                        <div class="product-details">
+                            <h2>STEEL PLIERS</h2>
+                            <p>Price: $00.00</p>
+                            <div class="quantity">
+                                Quantity: <input type="number" value="1">
+                            </div>
+                        </div>
+                        <div class="remove-item">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h4>Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$00.00 </h4>
+                        <h4>Shipping:&nbsp;&nbsp;&nbsp;$00.00 </h4>
+                    </div>
+                    <div class="checkout-button">
+                        <button>Checkout</button>
                     </div>
                 </div>
             </div>
@@ -206,7 +201,7 @@
                 </div>
                 <div class="footer-row-column col-md-3">
                     <p>
-                        <a href="index.html">
+                        <a href="#">
                             <img src="images/tunnel-stone/logo-no-background.png" alt="Image 1"
                                 class="img-fluid logo-no-background">
                         </a>
@@ -229,6 +224,7 @@
         <div class="container mt-4 text-center">
             <p>&copy; 2023 Tunnel Stone</p>
         </div>
+
     </footer>
     <script src="js/script.js"></script>
 </body>

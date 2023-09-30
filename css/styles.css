@@ -183,14 +183,15 @@ body {
 .home-banner-box {
     width: 500px;
     height: 130px;
-    background-color: #444444;
+    background-color: rgba(68, 68, 68, 0.9);
+    border-color:rgba(68, 68, 68, 0.9);;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 100px;
     top: 250px;
     padding: 10px 0;
     text-align: center;
     color: #ffffff;
-    border: black;
     border-width: 3px;
     border-style: solid;
 }
@@ -198,7 +199,9 @@ body {
 .home-banner-box2 {
     width: 200px;
     height: 70px;
-    background-color: #444444;
+    background-color: rgba(68, 68, 68, 0.9);
+    border-color:rgba(68, 68, 68, 0.9);;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 100px;
     top: 400px;
@@ -210,9 +213,9 @@ body {
     border-radius: 5px;
     transition: 0.3s;
     border-width: 3px;
-    border-color: black;
     border-style: solid;
 }
+
 
 .home-banner-box2:hover {
     background-color: #00d1cd;
@@ -250,11 +253,15 @@ body {
 
 .category-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height: auto;
     background-color: #cdd4da;
+    position: relative;
     text-align: center;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
     padding: 15px;
 }
 
@@ -338,11 +345,274 @@ body {
 
 
 
+
+
+
 /* SHOP PAGE */
+.next-link-block {
+    height: 50px;
+    background-color: #969ea8;
+    position: relative;
+    padding-top: px;
+    top: 0px;
+    text-align: center;
+}
+
+/* Floating Menu Styles */
+.floating-menu {
+    position: fixed;
+    top: 50%;
+    left: -280px; /* Adjust this value to control the initial visibility */
+    padding: 10px;
+    transform: translateY(-50%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    background-color: #f6f6f4;
+    border-color:#a6afb7;
+    border-width: 2px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+}
+.floating-menu.active {
+    left: 0;
+}
+.floating-menu.active .menu-content {
+    max-height: none;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-icon {
+    display: block;
+    width: 300px;
+    height: 6px;
+    background-color: #a6afb7;
+    margin: 6px auto;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+    top: 0;
+    max-height: 800px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-items li {
+    padding: 10px 20px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    display: block;
+}
+.menu-items label {
+    font-size: 24px; 
+}
+
+.menu-items input[type="radio"] {
+    width: 30px; 
+    height: 30px; 
+}
+
+.menu-items input[type="radio"]::before {
+    width: 24px;
+    height: 24px; 
+}
+
+/* Show menu on hover or click */
+.floating-menu.active .menu-content {
+    max-height: 800px; /* Adjust as needed */
+}
+
+@media only screen and (max-width: 1000px) {
+    .floating-menu {
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* PRODUCT PAGE */
+.product-display {
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .product-display .prev-button,
+  .product-display .next-button {
+    position: relative;
+    background-color: rgba(68, 68, 68, 0.6);
+    border-color:rgba(68, 68, 68, 0.4);;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-display .prev-button {
+    left: 10px;
+  }
+  
+  .product-display .next-button {
+    right: 10px;
+  }
+  
+  .prev-button,
+  .next-button {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .name-box {
+    background-color: #7f8388;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+.description {
+    background-color: #a6afb7;
+    padding: 40px;
+    border: 1px solid #ccc;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.price-button {
+    position: relative;
+    background-color: #a6afb7;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 200px;
+    border-radius: 5px;
+    cursor: none;
+    font-weight: bold;
+}
+
+.add-to-cart-button {
+    position: relative;
+    background-color: #a6afb7;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-to-cart-button:hover {
+    background-color: #009e9a;
+}
+
+
+
+
+
 
 /* CART PAGE */
+.product-image img {
+    max-width: 175px;
+    height: 175px;
+}
+
+.product-details {
+    margin-left: 20px; /* Added margin to separate product details from image */
+}
+
+.quantity,
+.price {
+    margin-top: 10px;
+}
+
+.remove-item {
+    align-self: center;
+    cursor: pointer;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background-color: #a8afb7;
+    border-color: #a8afb7 ;
+}
+
+.cart-item .product-image {
+    margin-right: 20px;
+}
+
+.total {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a8afb7;
+    color: white;
+    text-align: left;
+
+}
+
+
+.checkout-button button {
+    padding: 10px 20px;
+    background-color: #a8afb7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
 
 /* ABOUT PAGE */
 .about-text h2 {

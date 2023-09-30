@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This website has been tested on: Google Chrome and Microsft Edge -->
 
 <head>
     <meta charset="utf-8">
@@ -47,7 +46,7 @@
                 <!-- Nav -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="shop.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <h4>Shop</h4>
                         </a>
                     </li>
@@ -72,59 +71,65 @@
             </div>
         </div>
     </nav>
+
+
     <!-- Secondary box -->
     <div class="navbar-secondary-box"></div>
 
-
-
     <!-- Banner -->
-    <img src="images/cladding-banner.jpg" class="home-banner img-fluid" alt="Image">
+    <img src="images/slider2.jpg" class="home-banner img-fluid" alt="Image">
     <div class="home-banner-box">
-        <h1>The Home of<br>Home Improvement</h1>
+        <h1>Good Deals,<br>Low Prices</h1>
     </div>
-    <a href="shop.html" class="home-banner-box2">
+    <a href="#" class="home-banner-box2">
         <h2>SHOP ALL</h2>
     </a>
 
-
-
-    <!-- Categories -->
-    <div class="categories-block">
-        <h5>CATEGORIES</h5>
-    </div>
-
-    <div class="category-container">
-        <div class="category-box" onclick="redirectToPage(pageUrl)">
-            <div class="category-image" style="background-image: url('images/products/tools.png')"></div>
-            <div class="category-text">
-                <p>TOOLS</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/timber.png')"></div>
-            <div class="category-text">
-                <p>TIMBER</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/electrical.png')"></div>
-            <div class="category-text">
-                <p>ELECTRICAL</p>
-            </div>
-        </div>
-        <div class="category-box" onclick="redirectToPage('')">
-            <div class="category-image" style="background-image: url('images/products/plumbing.png')"></div>
-            <div class="category-text">
-                <p>PLUMBING</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Popular Products -->
     <div class="categories-block">
         <h5>POPULAR PRODUCTS</h5>
     </div>
+
+    <div class="floating-menu">
+        <button class="menu-toggle">
+            <span class="menu-icon"></span>
+        </button>
+        <div class="menu-content">
+            <!-- Row 1: SHOP BY CATEGORY -->
+            <div class="menu-row">
+                <h3>SHOP BY CATEGORY</h3>
+                <ul class="menu-items">
+                    <li><label><input type="radio" name="category" value="plumbing"> Plumbing</label></li>
+                    <li><label><input type="radio" name="category" value="electrical"> Electrical</label></li>
+                    <li><label><input type="radio" name="category" value="tools"> Tools</label></li>
+                    <li><label><input type="radio" name="category" value="timber"> Timber</label></li>
+                </ul>
+            </div>
+
+            <!-- Row 2: SHOP BY PRICE -->
+            <div class="menu-row">
+                <h3>SHOP BY PRICE</h3>
+                <ul class="menu-items">
+                    <li><label><input type="radio" name="price" value="10"> $10</label></li>
+                    <li><label><input type="radio" name="price" value="20"> $20</label></li>
+                    <li><label><input type="radio" name="price" value="50"> $50</label></li>
+                    <li><label><input type="radio" name="price" value="100"> $100</label></li>
+                </ul>
+            </div>
+
+            <!-- Row 3: SHOP BY BRAND -->
+            <div class="menu-row">
+                <h3>SHOP BY BRAND</h3>
+                <ul class="menu-items">
+                    <li><label><input type="radio" name="brand" value="tunnel-stone"> Tunnel Stone</label></li>
+                    <li><label><input type="radio" name="brand" value="tunnel-stone"> Tunnel Stone</label></li>
+                    <li><label><input type="radio" name="brand" value="tunnel-stone"> Tunnel Stone</label></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Page -->
     <div class="product-container">
         <div class="container">
             <div class="row justify-content-between">
@@ -162,11 +167,117 @@
                         <button class="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p4.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p5.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p1.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p2.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p3.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p4.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p5.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p1.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p2.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p3.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p4.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="product-box py-4">
+                        <p>Steel Pliers</p>
+                        <img src="images/products/p5.png" alt="Product Name" class="product-image">
+                        <p>$0.00</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
+    <div class="next-link-block">
+        <a href="javascript:void(0);" class="btn btn-link next-link" onclick="window.location.href='index.html';">
+            << </a>
+                <a href="javascript:history.go(-1)" class="btn btn-link next-link">Previous</a>
+                <a href="#" class="btn btn-link next-link custom-btn">1</a>
+                <a href="#" class="btn btn-link next-link custom-btn">2</a>
+                <a href="#" class="btn btn-link next-link custom-btn">3</a>
+                <a href="#" class="btn btn-link next-link custom-btn">4</a>
+                <a href="#" class="btn btn-link next-link custom-btn">5</a>
+                <a href="#" class="btn btn-link next-link">Next</a>
+                <a href="javascript:history.go(-1)" class="btn btn-link next-link"> >> </a>
+    </div>
 
     <!-- Footer -->
     <footer class="footer text-light text-start py-3">
@@ -229,6 +340,7 @@
         <div class="container mt-4 text-center">
             <p>&copy; 2023 Tunnel Stone</p>
         </div>
+
     </footer>
     <script src="js/script.js"></script>
 </body>
