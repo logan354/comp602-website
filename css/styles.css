@@ -68,7 +68,8 @@
 .rounded-iframe-container {
     overflow: hidden;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (h/w) */
     height: 0;
 }
 
@@ -90,20 +91,23 @@
 
 /* Adjusted margin for logo-no-background.png */
 .logo-no-background {
-    max-width: 100%; /* Set maximum width to 100% */
+    max-width: 100%;
+    /* Set maximum width to 100% */
     height: auto;
     margin-top: -40px;
     margin-bottom: -50px;
     margin-left: 30px;
 }
 
-footer, p {
+footer,
+p {
     font-size: 1.25rem;
     line-height: 1.75;
     color: #fff;
 }
 
-footer, h4 {
+footer,
+h4 {
     font-size: 2rem;
     line-height: 1.2;
     color: #fff;
@@ -238,6 +242,7 @@ body {
     top: 0px;
     text-align: center;
 }
+
 .categories-block h5 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -245,7 +250,7 @@ body {
     color: white;
     text-decoration: none;
 }
-  
+
 .category-container {
     display: flex;
     justify-content: center;
@@ -316,6 +321,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .product-box p {
     margin-bottom: 0;
     font-weight: bold;
@@ -609,8 +615,104 @@ body {
 
 
 /* ABOUT PAGE */
+.about-text h2 {
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: black;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #cdd4da;
+    position: relative;
+    text-align: center;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.staff-box {
+    background-color: #7f8389;
+    border: #7f8389;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.staff-name p {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.staff-role p {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+
+.staff-image {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    background-color: #fff;
+    align-self: center;
+}
+
+
+
+
+
 
 /* CONTACT PAGE */
+.contact-banner {
+    width: 100%;
+    height: auto;
+}
 
+.contact-banner-text {
+    position: absolute;
+    left: 325px;
+    top: 450px;
+    color: #ffffff;
+    font-weight: 500;
+}
 
+.contact-information p,
+h4 {
+    color: black;
+}
 
+.contact-form-title {
+    margin-bottom: 40px;
+}
+
+.contact-form-name1,
+.contact-form-name2,
+.contact-form-email,
+.contact-form-phone {
+    float: left;
+    width: 40%;
+}
+
+.contact-form-message {
+    width: 40%;
+}
+
+.contact-form-name2,
+.contact-form-phone {
+    padding: 0 20px;
+}
