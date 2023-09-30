@@ -416,3 +416,7 @@ body {
     top: 450px;
     color: #ffffff;   
 }
+
+.contact-information p, h3 {
+    color: black;
+}
