@@ -354,7 +354,7 @@ body {
 .floating-menu {
     position: fixed;
     top: 50%;
-    left: 0;
+    left: -280px; /* Adjust this value to control the initial visibility */
     padding: 10px;
     transform: translateY(-50%);
     border-top-right-radius: 5px;
@@ -365,10 +365,19 @@ body {
     border-color:#a6afb7;
     border-width: 2px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-
+    transition: left 0.3s ease; /* Add a transition for smooth animation */
 }
-
+.floating-menu.active {
+    left: 0; /* Slide in the menu when active */
+}
+.floating-menu.active .menu-content {
+    max-height: none; /* Remove the height restriction on hover */
+}
 .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -388,7 +397,9 @@ body {
     overflow: hidden;
     transition: max-height 0.3s ease;
     position: relative;
-    top: 0; /* Reset top position */
+    top: 0;
+    max-height: 800px; /* Adjust as needed */
+    overflow: hidden;
 }
 
 .menu-items {
@@ -491,7 +502,6 @@ body {
     background-color: #a6afb7;
     color: #fff;
     margin-top: 10px;
-    margin-right: 200px;
     border: none;
     padding: 10px 200px;
     border-radius: 5px;
@@ -515,29 +525,76 @@ body {
     background-color: #009e9a;
 }
 
-
-  
-
-    
-
-
-
 /* CART PAGE */
+
+
+.product-image img {
+    max-width: 175px;
+    height: 175px;
+}
+
+.product-details {
+    margin-left: 20px; /* Added margin to separate product details from image */
+}
+
+.quantity,
+.price {
+    margin-top: 10px;
+}
+
+.remove-item {
+    align-self: center;
+    cursor: pointer;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background-color: #a8afb7;
+    border-color: #a8afb7 ;
+}
+
+.cart-item .product-image {
+    margin-right: 20px;
+}
+
+.total {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a8afb7;
+    color: white;
+    text-align: left;
+
+}
+
+
+.checkout-button button {
+    padding: 10px 20px;
+    background-color: #a8afb7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
 
 /* ABOUT PAGE */
 
 /* CONTACT PAGE */
 
-
-/* KEEP CONTENT CENTERED */
-
-.categories-block,
-.product-container,
-.next-link-block,
-footer,
- {
-    width: 100%;
-    max-width: auto;
-}
 
 

@@ -5,7 +5,7 @@ function redirectToPage(pageUrl) {
 }
 
 
-/* Shop Page, Flaoting Menu*/
+/* Shop Page, Floating Menu*/
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const floatingMenu = document.querySelector('.floating-menu');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-/* Product Page */
+/* Product Page, Image Cycler */
 document.addEventListener('DOMContentLoaded', function() {
     const productDisplay = document.querySelector('.product-display');
     const productImage = productDisplay.querySelector('.product-image');
@@ -47,4 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     updateImage();
   });
+
+
+
   
