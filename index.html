@@ -14,6 +14,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -89,33 +93,31 @@
     </div>
 
     <div class="category-container">
-        <div class="category-box" onclick="redirectToPage('page1.html')">
+        <div class="category-box" onclick="redirectToPage(pageUrl)">
             <div class="category-image" style="background-image: url('images/product/tools.png')"></div>
             <div class="category-text">
                 <p>TOOLS</p>
             </div>
         </div>
-        <div class="category-box" onclick="redirectToPage('page2.html')">
+        <div class="category-box" onclick="redirectToPage('')">
             <div class="category-image" style="background-image: url('images/product/timber.png')"></div>
             <div class="category-text">
                 <p>TIMBER</p>
             </div>
         </div>
-        <div class="category-box" onclick="redirectToPage('page3.html')">
+        <div class="category-box" onclick="redirectToPage('')">
             <div class="category-image" style="background-image: url('images/product/electrical.png')"></div>
             <div class="category-text">
                 <p>ELECTRICAL</p>
             </div>
         </div>
-        <div class="category-box" onclick="redirectToPage('page4.html')">
+        <div class="category-box" onclick="redirectToPage('')">
             <div class="category-image" style="background-image: url('images/product/plumbing.png')"></div>
             <div class="category-text">
                 <p>PLUMBING</p>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-
   
 
      <!-- Popular Products -->
@@ -128,7 +130,9 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="product-box py-4">
                         <p>Battery Driver</p>
-                        <img src="images/product/p1.png" alt="Product Name" class="product-image">
+                        <a href="product.html">
+                            <img src="images/product/p1.png" alt="Product Name" class="product-image">
+                        </a> 
                         <p>$0.00</p>
                         <button class="btn btn-primary">Add to Cart</button>
                     </div>
@@ -225,6 +229,7 @@
             <p>&copy; 2023 Tunnel Stone</p>
         </div>
     </footer>
+<script src="js/script.js"></script>
 </body>
 
 </html>
