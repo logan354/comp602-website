@@ -339,8 +339,10 @@ body {
 
 
 
-/* SHOP PAGE */
 
+
+
+/* SHOP PAGE */
 .next-link-block {
     height: 50px;
     background-color: #969ea8;
@@ -436,9 +438,18 @@ body {
     max-height: 800px; /* Adjust as needed */
 }
 
+@media only screen and (max-width: 1000px) {
+    .floating-menu {
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* PRODUCT PAGE */
-
 .product-display {
     position: relative;
     border-radius: 5px;
@@ -525,9 +536,12 @@ body {
     background-color: #009e9a;
 }
 
+
+
+
+
+
 /* CART PAGE */
-
-
 .product-image img {
     max-width: 175px;
     height: 175px;
@@ -588,6 +602,8 @@ body {
     cursor: pointer;
     
 }
+
+
 
 
 
