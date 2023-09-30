@@ -345,6 +345,10 @@ body {
 /* CART PAGE */
 
 /* ABOUT PAGE */
+.about-text h2 {
+    margin-bottom: 25px;
+}
+
 .about-text p {
     color: black;
 }
